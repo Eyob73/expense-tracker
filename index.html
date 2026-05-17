@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>Expense Tracker</h1>
+            <p>Track your spending.</p>
+        </header>
+
+        <form id="expenseForm">
+            <div class="form-group">
+                <label for="amount">Amount *</label>
+                <input type="number" id="amount" step="0.01" required placeholder="0.00">
+                <span id="amountError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="bank">Bank / Payment Method *</label>
+                <input type="text" id="bank" required placeholder="e.g. CBE, Cash">
+                <span id="bankError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date *</label>
+                <input type="datetime-local" id="date" required>
+                <span id="dateError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Reason *</label>
+                <input type="text" id="reason" required placeholder="e.g. Groceries">
+                <span id="reasonError" class="error"></span>
+            </div>
+
+            <button type="button" class="btn-primary" onclick="addExpense()">Add Expense</button>
+        </form>
+
+        <div class="actions">
+            <a href="expenseList.html" class="btn-secondary">View Expenses</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -64,7 +64,7 @@ function ExpenseForm({ onSubmit, initialData, onCancel }) {
     `w-full px-4 py-3 rounded-xl border-2 transition-all duration-200 outline-none text-sm ${
       errors[field]
         ? "border-red-300 bg-red-50 focus:border-red-500 focus:ring-4 focus:ring-red-100"
-        : "border-gray-200 bg-gray-50 focus:border-violet-500 focus:bg-white focus:ring-4 focus:ring-violet-100"
+        : "border-gray-200 bg-gray-50 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100"
     }`;
 
   return (
@@ -189,7 +189,7 @@ function ExpenseForm({ onSubmit, initialData, onCancel }) {
             <select
               value={form.paymentMethod}
               onChange={(e) => handleChange("paymentMethod", e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:border-violet-500 outline-none transition-all text-sm"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:border-blue-500 outline-none transition-all text-sm"
             >
               <option value="">Select payment method</option>
               <option value="cash">Cash</option>
